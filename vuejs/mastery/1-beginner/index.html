@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar"></div>
+
+      <div class="cart">Cart({{ nbProd }})</div>
+ 
+      <product-display :premium="premium" @update-cart="updateCart">
+
+
+      </product-display>
+
+     </div>
+
+      
+    <!-- Import Js -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+<script src="./components/ProductDisplay.js"></script>
+<script src="./components/ProductDetails.js"></script>
+<script src="./components/ReviewForm.js"></script>
+<script src="./components/ReviewList.js"></script>
+
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp =app.mount("#app");
+     //  console.log(app._container.innerHTML);
+    // const mytab=['jolie','52'];
+    // console.log(typeof(mytab)) ---> object
+    </script>
+
+  </body>
+</html>
